@@ -7,6 +7,10 @@
             border: 1px solid black;
             border-collapse: collapse;
             padding: 10px;
+            margin : 1%;
+        }
+        button {
+            margin : 1%;
         }
     </style>
 </head>
@@ -17,8 +21,10 @@ Number of cols: <input type="text" id="t2" /><br /><br />
 <button id="b1" onclick="generateTable()">Generate Table</button><br /><br />
 <button id="b2" onclick="addColumn()">Add Column</button>
 <button id="b3" onclick="addRow()">Add Row</button>
+
 <script>
     function generateTable() {
+
         var rows = document.getElementById('t1').value;
         var cols = document.getElementById('t2').value;
         var table = '<table>';
